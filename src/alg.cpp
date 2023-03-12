@@ -6,7 +6,8 @@
 double pown(double value, uint16_t  n) {
     double pow = value;
     if (n == 0.0) pow = 1;
-    else {
+    else 
+    {
         for (uint16_t i = 1; i < n; i++)
             pow *= value;
     }
@@ -15,8 +16,10 @@ double pown(double value, uint16_t  n) {
 
 uint64_t fact(uint16_t n) {
     if (n <= 1) return 1;
-    else {
-        return n * fact(n - 1); }
+    else 
+    {
+        return n * fact(n - 1); 
+    }
 }
 
 double calcItem(double x, uint16_t n) {
